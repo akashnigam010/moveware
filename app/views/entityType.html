@@ -15,7 +15,12 @@
                         
                     </table>
                 </div>
-                <button class="btn btn-primary col-xs-3" type="button" ng-click="addEntityType($event)">Add Entity Type</button>
+                <md-input-container layout="row" layout-fill style="height:50px;" class="col-xs-4">
+                    <md-button class="md-accent md-raised md-large" ng-click="addEntityType($event)" aria-label="addEntityType">
+                        Add Entity Type
+                    </md-button>
+                </md-input-container>
+                
             </div>
         </div>   
     </md-content>
