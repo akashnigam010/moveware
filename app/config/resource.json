@@ -1,0 +1,11 @@
+{
+    "sense": {
+        "hosturl":"/moveware/",
+        "appname":"Moveware",
+        "version":"v 1.0 (beta)",
+        "browserinfo": {
+            "copyright": "MOVEWARE - Powered by comakeIT",
+            "brandname": "MOVEWARE"
+        }
+    }
+}

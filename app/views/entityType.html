@@ -1,0 +1,22 @@
+<div ng-init="loadEntityTypes()">
+    <md-content>
+        <div layout="column" layout-padding>
+            <div flex layout="column">
+                <div>
+                    <table class="table table-bordered table-responsive-md">
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr ng-repeat="entityType in entityTypes">
+                            <td>{{entityType.name}}</td>
+                            <td>{{entityType.description}}</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <button class="btn btn-primary col-xs-3" type="button" ng-click="addEntityType($event)">Add Entity Type</button>
+            </div>
+        </div>   
+    </md-content>
+</div>

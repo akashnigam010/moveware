@@ -1,0 +1,25 @@
+<div style="height: 100%; width: 103%;">
+    <md-toolbar md-whiteframe="12">
+            <div class="md-toolbar-tools">
+                <md-button ng-click="toggleSidenav()" class="md-icon-button" hide-gt-md aria-label="Menu">
+                    <md-icon><ng-md-icon icon="menu"></ng-md-icon></md-icon>              
+                </md-button>
+                <h1> MOVEWARE </h1>
+            </div>
+        </md-toolbar>
+    <md-content layout="row" layout-align="center center" style="height: 100%;">
+        <div flex-xs="80" flex-sm="50" flex-md="30" flex-lg="20">
+            <md-input-container layout="row">
+                <input flex type="text" ng-model="user.name" aria-label="username input" style="font-size: 20px; text-align: center;">
+            </md-input-container>
+            <md-input-container layout="row">
+                <input flex type="password" ng-model="user.password" aria-label="pin input" style="font-size: 20px; text-align: center;">
+            </md-input-container>
+            <md-input-container layout="row" layout-fill style="height:70px;">
+                <md-button class="md-accent md-raised md-large" ng-click="login(user)" aria-label="login" style="width:100%;">
+                    LOGIN
+                </md-button>
+            </md-input-container>
+        </div>
+    </md-content>
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "Moveware",
+  "version": "1.0.0",
+  "description": "Moveware UI",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Akash Nigam",
+  "license": ""
+}
