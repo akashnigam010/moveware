@@ -35,49 +35,4 @@ app.controller('LoginController', ['$scope', '$rootScope', 'Services', 'growl', 
         //     }
         // });
     };
-
-    function openManagementNavigationMenus() {
-        // display only for admin(1), owner(2) and manager(3)
-        if (($rootScope.user.roleId == 1 || $rootScope.user.roleId == 2 || $rootScope.user.roleId == 3) 
-            && $rootScope.user.authorizedToManage) {
-            var manageNavMenuItems = [{
-                title: 'Menu',
-                icon: 'restaurant_menu',
-                href: '/manageMenu'
-            }, {
-                title: 'Personnels',
-                icon: 'group',
-                href: '/personnel'
-            }, {
-                title: 'Tables',
-                icon: 'bookmark',
-                href: '/tables'
-            }, {
-                title: 'Tax Details',
-                icon: 'account_balance',
-                href: '/taxDetails'
-            }, {
-                title: 'Reports',
-                icon: 'insert_chart',
-                href: '/report'
-            }, {
-                title: 'Restaurant Info',
-                icon: 'info_outline',
-                href: '/restaurantInfo'
-            }, {
-                title: 'Support Center',
-                icon: 'contacts',
-                href: '/supportCenter'
-            }];
-
-            var settingsNavMenuItems = [{
-                title: 'Cloud Settings',
-                icon: 'settings',
-                href: '/cloudSettings'
-            }];
-
-            $.merge($scope.$parent.manageNavMenu, manageNavMenuItems);
-            $.merge($scope.$parent.settingsNavMenu, settingsNavMenuItems);
-        }
-    }
 }]);

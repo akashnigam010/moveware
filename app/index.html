@@ -17,15 +17,14 @@
 
 <body layout="row" ng-controller="AppCtrl" ng-cloak>
     <md-sidenav ng-show="isauthsuccess" layout="column" md-whiteframe="10" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-swipe-left="onSwipeLeft()">
-        <md-toolbar class="md-tall md-hue-2" md-whiteframe="4">
-            <span flex></span>
+        <md-toolbar class="md-tall">
             <div layout="column" class="md-toolbar-tools-bottom inset">
-                <span></span>
-                <div>
-                    <h3>{{user.name | uppercase}}</h3>
+                <div flex="50">
+                    <img src="assets/img/img_avatar.png" style="height: 50px; width: 50px; border-radius: 50%;">
                 </div>
-                <div>
-                    <h5>{{user.roleName}}</h5>
+                <div flex="100" layout="column">
+                    <span flex="50"><h3>Himant</h3></span>
+                    <span flex="50" style="font-size: 10px; margin-top: -10px;">Admin</span>
                 </div>
             </div>
         </md-toolbar>

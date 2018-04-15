@@ -6,7 +6,13 @@ config(['$routeProvider', '$httpProvider', 'growlProvider', '$mdThemingProvider'
     growlProvider.globalTimeToLive(3000);
     growlProvider.globalEnableHtml(true);
 
-    $mdThemingProvider.theme('default').primaryPalette('blue').accentPalette('green');
+    var movewareBlueMap = $mdThemingProvider.extendPalette('blue', {
+        '500': '#0270C1'
+    });
+
+    $mdThemingProvider.definePalette('movewareBlue', movewareBlueMap);
+
+    $mdThemingProvider.theme('default').primaryPalette('movewareBlue').accentPalette('blue');
     
     $httpProvider.interceptors.push('httpInterceptor');
     

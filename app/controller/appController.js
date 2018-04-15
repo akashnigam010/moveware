@@ -50,7 +50,6 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$rootScope', '$location', 'S
 
     $scope.logout = function() {
         $rootScope.isauthsuccess = false;
-        Services.destroyAllData();
         $scope.activeItem = $scope.sideNavMenu[0];
         $scope.manageNavMenu = [];
         $scope.settingsNavMenu = [];
